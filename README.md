@@ -1,2 +1,6 @@
 # LairLiu.github.io
 blog page code
+
+### themes:
+NexT:
+    git clone https://github.com/theme-next/hexo-theme-next themes/next
