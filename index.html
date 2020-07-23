@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>LairLiu</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
+</head>
+
+<body>
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      name: 'LairLiu',
+      repo: 'https://github.com/LairLiu/LairLiu.github.io',
+      maxLevel: 4,
+      subMaxLevel: 3,
+      homepage: 'README.md',
+      loadSidebar: true,  //侧边栏
+      loadNavbar: true,   //导航栏
+      coverpage: false,    //封面
+      auto2top: true,
+      search: {
+        maxAge: 86400000, //过期时间，默认一天
+        paths: 'auto',
+        placeholder: '搜索',
+        noData: '没有找到结果',
+        depth: 6  //搜索标题的最大层级
+      },
+      // 复制代码
+      copyCode: {
+        buttonText: {
+          '/zh-cn/': '点击复制',
+          '/': '点击复制'
+        },
+        errorText: {
+          '/zh-cn/': '错误',
+          '/': '错误'
+        },
+        successText: {
+          '/zh-cn/': '复制',
+          '/': '复制'
+        },
+        // 字数统计
+        count: {
+          countable: true,
+          fontsize: '0.9em',
+          color: 'rgb(90,90,90)',
+          language: 'chinese'
+        },
+        //  在github上编辑该页面
+        plugins: [
+          // EditOnGithubPlugin.create('https://github.com/Snailclimb/JavaGuide-Interview/blob/master/')
+        ]
+      },
+    }
+  </script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+  <!-- 全局搜索 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  <!-- 复制代码到剪贴板 -->
+  <script src="//unpkg.com/docsify-copy-code"></script>
+  <!-- 图片缩放 -->
+  <script src="//unpkg.com/docsify/lib/plugins/zoom-image.js"></script>
+  <!-- 字数统计 -->
+  <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
+  <!-- 在github中编辑 -->
+  <!-- <script src="//unpkg.com/docsify-edit-on-github/index.js"></script> -->
+</body>
+
+</html>
